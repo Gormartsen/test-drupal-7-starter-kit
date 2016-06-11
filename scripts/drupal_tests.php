@@ -34,7 +34,7 @@ if(empty($tests)) {
   $tests = '--all';
 }
 
-$cmd = 'php ' . $deploy_dir . '/scripts/run-tests.sh --url http://localhost --verbose --all --concurrency 10 --color --summary /tmp/summary ' . $tests;
+$cmd = 'php ' . $deploy_dir . '/scripts/run-tests.sh --url http://localhost --verbose --concurrency 10 --color --summary /tmp/summary ' . $tests;
 
 $proc = popen($cmd, 'r');
 
