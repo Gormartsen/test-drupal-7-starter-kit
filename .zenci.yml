@@ -14,6 +14,7 @@ test:
         account_pass: REPLACE_WITH_ADMIN_PASSWORD
         site_mail: noreply@zen.ci
         site_name: 'branch {branch} tests for {repo_owner}/{repo_name}'
+        tests: 'Views'
       scripts:
         init: '{deploy_dir}/scripts/deploy_init.sh'
       tests:
@@ -32,6 +33,7 @@ test:
         account_pass: REPLACE_WITH_ADMIN_PASSWORD
         site_mail: noreply@zen.ci
         site_name: 'PR {pr_number} branch {branch} tests for {repo_owner}/{repo_name}'
+        tests: 'Views'        
       scripts:
         init: '{deploy_dir}/scripts/deploy_init.sh'
       tests:
